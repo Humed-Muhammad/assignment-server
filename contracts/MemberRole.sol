@@ -44,6 +44,24 @@ contract MemberRole {
     }
 
     /**
+     * Adding my own functions to the smart contract
+     */
+    function getAllRoleTypes() public view onlyOwner returns (string[] memory) {
+        return roleTypes;
+    }
+
+    function getAllAdressess()
+        public
+        view
+        onlyOwner
+        returns (address[] memory)
+    {
+        return addresses;
+    }
+
+    /**End */
+
+    /**
     @dev addRole - allows Admin to assign a Role to a Member
     @param _member - the address of the member that will get the new role assigned
     @param _roleType - index of the role in the roleTypes array
