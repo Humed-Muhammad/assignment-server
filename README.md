@@ -23,6 +23,14 @@ truffle version
 1. Install it as a .deb file [here](https://trufflesuite.com/ganache/)
 2. Or as a cli (npm i -g ganache-cli)
 
+- Run ganache-cli
+
+```bash
+ganache-cli -i 1337 -d --chainId 1337
+```
+
+- Make sure to add the network configuration on Metamask network
+
 - Run
 
 ```bash
